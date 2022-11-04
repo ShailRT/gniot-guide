@@ -1,0 +1,35 @@
+<header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="{% url 'home' %}" class="scrollto">GN GUIDE</a></h1>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'home' %}#about">About Us</a></li>
+          <li><a href="{% url 'home' %}#features">Features</a></li>
+          <li><a href="{% url 'home' %}#team">Team</a></li>
+          <li class="menu-has-children"><a href="javascript:void(0);">Downloads</a>
+            <ul>
+              <li><a href="javascript:void(0);">Subject 1</a></li>
+              <li class="menu-has-children"><a href="javascript:void(0);">Subject 2</a>
+                <ul>
+                  <li><a href="{% url 'download' 1%}">Deep Notes 1</a></li>
+                  <li><a href="{% url 'download' 1%}">Deep Notes 2</a></li>
+                  <li><a href="{% url 'download' 1%}">Deep Notes 3</a></li>
+                  <li><a href="{% url 'download' 1%}">Deep Notes 4</a></li>
+                  <li><a href="{% url 'download' 1%}">Deep Notes 5</a></li>
+                </ul>
+              </li>
+              <li><a href="{% url 'download' 1%}">Subject 3</a></li>
+              <li><a href="{% url 'download' 1%}">Subject 4</a></li>
+              <li><a href="{% url 'download' 1%}">Subject 5</a></li>
+            </ul>
+          </li>
+          <li><a href="{% url 'home' %}#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header>
